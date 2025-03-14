@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for readability
 
-keymap.set("i", "ne", "<ESC>", {desc = "Exit insert mode with ne"})
+keymap.set("i", "oe", "<ESC>", {desc = "Exit insert mode with oe - less common and in home row so should be good"})
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- clear search highlights

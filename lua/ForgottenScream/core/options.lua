@@ -8,14 +8,22 @@ opt.number = true -- Shows absolute line number for the buffer
 -- Tabs & indentation (getting this out of the way)
 opt.tabstop = 4 -- 4 spaces for tabs
 opt.shiftwidth = 4 -- 4 spaces for indent width
-opt.expandtab = true --expand tab to spaces
+opt.expandtab = false --expand tab to spaces
 opt.autoindent = true -- Copy indent from current line when starting new one
+opt.spell = true
+opt.spelllang = "en_gb"
 
 opt.wrap = false --disables line wrapping
 
+-- Spelling off for terminal
+vim.api.nvim_create_autocmd({ "TermOpen" }, {
+	pattern = "*",
+	command = "setlocal nospell",
+})
+
 -- Java specific settings
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "java",
+	pattern = "*.java",
 	callback = function()
 		vim.opt_local.tabstop = 4
 		vim.opt_local.shiftwidth = 4

@@ -1,2 +1,3 @@
-require("ForgottenScream.core")
-require("ForgottenScream.lazy")
+require("options")
+require("keymaps")
+require("lsp")

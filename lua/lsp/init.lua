@@ -42,3 +42,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end, "Format Buffer")
   end,
 })
+
+require("lsp.servers.lua_ls")
+require("lsp.servers.haskell")
+require("lsp.servers.gopls")
+require("lsp.servers.jdtls")

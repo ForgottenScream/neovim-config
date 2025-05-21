@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for readability
 
-keymap.set("n", "<leader>ee", vim.cmd.Ex)
+keymap.set("n", "<leader>ee", vim.cmd.Vex)
 
 -- clear search highlights
 keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })

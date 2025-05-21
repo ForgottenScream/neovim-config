@@ -21,15 +21,6 @@ vim.api.nvim_create_autocmd({ "TermOpen" }, {
 	command = "setlocal nospell",
 })
 
--- Java specific settings
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "*.java",
-	callback = function()
-		vim.opt_local.tabstop = 4
-		vim.opt_local.shiftwidth = 4
-		vim.opt_local.expandtab = true
-	end,
-})
 --search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- Assumes you want case-sensitive if mixed case in search

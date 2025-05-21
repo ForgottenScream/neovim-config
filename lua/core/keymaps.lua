@@ -4,6 +4,8 @@ local keymap = vim.keymap -- for readability
 
 keymap.set("n", "<leader>ee", vim.cmd.Vex)
 
+keymap.set("n", "<leader>lg", ":belowright split | terminal lazygit<CR>", { desc = "Open lazygit" })
+
 -- clear search highlights
 keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })
 

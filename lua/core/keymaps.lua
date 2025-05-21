@@ -4,8 +4,17 @@ local keymap = vim.keymap -- for readability
 
 keymap.set("n", "<leader>rc", ":source $MYVIMRC<CR>", { desc = "Reload config" })
 
-keymap.set("n", "<leader>e", vim.cmd.Ex)
---keymap.set("n", "<leader>ee", vim.cmd.Vex)
+-- Toggle Lexplorer (netrw on the left)
+vim.keymap.set("n", "<leader>e", function()
+	for _, win in ipairs(vim.api.nvim_list_wins()) do
+		local buf = vim.api.nvim_win_get_buf(win)
+		if vim.bo[buf].filetype == "netrw" then
+			vim.api.nvim_win_close(win, true)
+			return
+		end
+	end
+	vim.cmd("Lexplore")
+end, { desc = "Toggle file explorer" })
 
 keymap.set("n", "<leader>lg", ":belowright split | terminal lazygit<CR>", { desc = "Open lazygit" })
 

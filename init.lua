@@ -1,4 +1,5 @@
 require("core.options")
 require("core.keymaps")
+require("ui.statusline")
 require("ui.startscreen")
 require("lsp")

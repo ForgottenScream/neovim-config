@@ -2,15 +2,15 @@
 
 This repository contains my personal **Neovim configuration**, designed to be:
 
-- 🚫 **Plugin-free**
-- 🧼 **Minimal and clean**
-- 🧠 **Intuitive** and keyboard-driven
-- 💻 **Multi-language IDE** with built-in LSP support
-- 🧰 **Dotfiles-ready** and easy to port
+- **Plugin-free**
+- **Minimal and clean**
+- **Intuitive** and keyboard-driven
+- **Multi-language IDE** with built-in LSP support
+- **Dotfiles-ready** and easy to port
 
 ---
 
-## 🔧 Structure
+## Structure
 
 ```
 ~/.config/nvim/
@@ -35,15 +35,15 @@ This repository contains my personal **Neovim configuration**, designed to be:
 
 ---
 
-## 💡 Features
+## Features
 
-### 🚀 Core Behavior
+### Core Behavior
 - Sensible defaults (relative numbers, tab size, clipboard, splits)
 - Leader key: `<Space>`
 - Keymaps for split/tab navigation, terminal, explorer, git
 - Native terminal and LazyGit integration
 
-### 🧠 LSP Support (No Plugins)
+### LSP Support (No Plugins)
 - Diagnostics with custom icons
 - Buffer-local keymaps for:
   - `gd`, `gi`, `gr`, `K`, `<leader>rn`, `<leader>ca`, `<leader>f`
@@ -54,18 +54,18 @@ This repository contains my personal **Neovim configuration**, designed to be:
   - **Go** (`gopls`)
   - **Java** (`jdtls`, with project support)
 
-### 🗂️ File Explorer (Netrw)
+### File Explorer (Netrw)
 - Toggle with `<leader>e`
 - Uses `:Lex` and closes when already open
 - Supports creation, deletion, renaming, movement
 
-### 🖥️ UI
+### UI
 - Custom ASCII start screen
 - Minimal statusline showing filename, filetype, and position
 
 ---
 
-## 🛠️ Setup
+## Setup
 
 1. Clone into your dotfiles repo
 2. Symlink into `~/.config/nvim`
@@ -73,7 +73,7 @@ This repository contains my personal **Neovim configuration**, designed to be:
 
 ---
 
-## 🧹 Notes
+## Notes
 
 - All LSP functionality is native
 - File explorer and dashboard are hand-written (no plugins)

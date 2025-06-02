@@ -15,6 +15,10 @@ This repository contains my personal **Neovim configuration**, designed to be:
 ```
 ~/.config/nvim/
 ├── init.lua
+├── pack/
+│   └── nvim/
+│       └── start/
+│           └── nvim-lspconfig/
 └── lua/
     ├── core/
     │   ├── keymaps.lua

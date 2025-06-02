@@ -73,7 +73,9 @@ This repository contains my personal **Neovim configuration**, designed to be:
 
 1. Clone into your dotfiles repo
 2. Symlink into `~/.config/nvim`
-3. Install LSP servers manually (`lua-language-server`, `haskell-language-server`, `gopls`, `jdtls`)
+3. Clone `nvim-lspconfig` into `~/.config/nvim/pack/nvim/start/nvim-lspconfig`
+4. Install LSP servers manually (`lua-language-server`, `haskell-language-server`, `gopls`, `jdtls`)
+
 
 ---
 
